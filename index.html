@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=8">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try {
@@ -243,6 +243,22 @@
       <h2 class="section-title"><span>04</span>More projects</h2>
 
       <div class="project-grid">
+        <article class="project wide">
+          <img src="assets/kitchen-app.jpg?v=2" alt="Screenshot of the Azhagi's Kitchen app: counters for items tracked, running low and empty above a watercolour kitchen, with a dot on every storage spot" loading="lazy" width="1246" height="1168">
+          <div class="project-text">
+            <p class="project-kind">Personal · Installable web app</p>
+            <h3>Azhagi's Kitchen</h3>
+            <p>
+              A kitchen inventory where the interface is a watercolour of the actual kitchen. Each dot
+              is a storage spot: tap one to see what's inside, and mark each item as stocked, running low or
+              empty. The counters at the top add it all up.
+              It installs like an app, works fully offline, and keeps the data on the device with
+              export and import for backups.
+            </p>
+            <ul class="tags"><li>JavaScript</li><li>PWA</li><li>IndexedDB</li><li>Service worker</li></ul>
+          </div>
+        </article>
+
         <article class="project">
           <p class="project-kind">GenAI · Full stack</p>
           <h3>Talk With DB</h3>
@@ -367,6 +383,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=8"></script>
 </body>
 </html>
