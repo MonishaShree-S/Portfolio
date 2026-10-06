@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monisha Shree Senthil Nathan | AI Engineer</title>
+  <meta name="description" content="AI Engineer in Berlin building production LLM applications, RAG systems and text-to-SQL assistants on locally hosted models.">
+  <meta property="og:title" content="Monisha Shree Senthil Nathan | AI Engineer">
+  <meta property="og:description" content="I don't trust the model until I've tested it. Production LLM systems, built on-premise in Berlin.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Home">MS<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#rebuilds">Rebuilds</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow"><span class="dot"></span>AI Engineer · Berlin, Germany</p>
+          <h1>I don't trust the model until I've <em>tested</em> it.</h1>
+          <p class="lede">
+            I'm Monisha Shree Senthil Nathan. I build LLM systems that answer questions from real
+            business data, on hardware the customer owns. Most of my work is the part around the model:
+            the rules, the checks and the evaluation that make it safe to ship.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#rebuilds">See what I built</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="receipt-wrap" aria-label="A receipt summarising my profile">
+          <div class="receipt">
+            <p class="r-logo">MS<span>.</span></p>
+            <p class="r-center">Monisha Shree Senthil Nathan<br>AI Engineer · Berlin</p>
+            <p class="r-meta"><span>Bon-Nr. 0001</span><span id="r-date">Berlin</span></p>
+            <ul class="r-items">
+              <li><span>Backend &amp; AI engineering</span><i></i><b>5+ yrs</b></li>
+              <li><span>M.Sc. Computer Science</span><i></i><b>2025</b></li>
+              <li><span>LLM apps &amp; RAG</span><i></i><b>daily</b></li>
+              <li><span>Local inference, LoRA</span><i></i><b>1 GPU</b></li>
+              <li><span>Python · Java · SQL</span><i></i><b>3 ×</b></li>
+              <li><span>English · German · Tamil</span><i></i><b>C1 B1 N</b></li>
+            </ul>
+            <p class="r-total"><span>Summe</span><b>1 engineer</b></p>
+            <div class="r-barcode" aria-hidden="true"></div>
+            <p class="r-center r-thanks">Vielen Dank für Ihren Besuch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="approach">
+      <h2 class="section-title"><span>01</span>How I work</h2>
+      <ol class="principles">
+        <li>
+          <h3>Start from a real annoyance</h3>
+          <p>My longest-running project began because splitting supermarket receipts with flatmates was tedious. I have rebuilt it five times since.</p>
+        </li>
+        <li>
+          <h3>Put guardrails around the model</h3>
+          <p>A model that writes SQL will eventually write wrong SQL. I build the layer that catches it: rule models, rewrites, limits.</p>
+        </li>
+        <li>
+          <h3>Treat constraints as the brief</h3>
+          <p>One GPU, no data leaving the building, German-speaking users. Quantization and local inference are how the work gets done.</p>
+        </li>
+        <li>
+          <h3>Ship like a bank engineer</h3>
+          <p>Three years on a Citi project taught me release discipline. TLS, signed code and tested changes come with me into AI.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="rebuilds">
+      <h2 class="section-title"><span>02</span>One problem, five rebuilds</h2>
+      <p class="section-intro">
+        Since 2023 I have kept returning to one small problem: who owes whom after the grocery run.
+        Each version is where I practised the next thing I wanted to learn.
+      </p>
+
+      <ol class="stages">
+        <li>
+          <span class="stage-date">Dec 2023</span>
+          <svg class="stage-art" viewBox="0 0 120 64" aria-hidden="true">
+            <path class="shape" d="M14 8h30v48l-5-4-5 4-5-4-5 4-5-4-5 4z"/>
+            <path d="M20 18h18M20 26h18M20 34h12"/>
+            <path d="M54 32h16M65 27l5 5-5 5"/>
+            <rect class="shape" x="78" y="14" width="30" height="36" rx="3"/>
+            <path d="M78 26h30M78 38h30M93 14v36"/>
+          </svg>
+          <div>
+            <h3>Can a receipt be read at all?</h3>
+            <p>OCR experiments on REWE and Kaufland receipts with Tesseract and cloud OCR APIs. Output: items, prices and quantities as JSON, then CSV to paste into Excel.</p>
+          </div>
+        </li>
+        <li>
+          <span class="stage-date">May 2024</span>
+          <svg class="stage-art" viewBox="0 0 120 64" aria-hidden="true">
+            <rect class="shape" x="40" y="12" width="40" height="40" rx="4"/>
+            <path d="M50 26l6 6-6 6M62 40h10"/>
+          </svg>
+          <div>
+            <h3>One script</h3>
+            <p>A single Python file that takes expenses, splits them and prints who owes whom.
+              <a href="https://github.com/BigDataEngineer09/ExpenseSharingApp_Python" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </li>
+        <li>
+          <span class="stage-date">2024 – 2025</span>
+          <svg class="stage-art" viewBox="0 0 120 64" aria-hidden="true">
+            <rect class="shape" x="34" y="4" width="52" height="15" rx="3"/>
+            <rect class="shape" x="34" y="25" width="52" height="15" rx="3"/>
+            <rect class="shape" x="34" y="46" width="52" height="15" rx="3"/>
+            <path d="M60 19v6M60 40v6"/>
+          </svg>
+          <div>
+            <h3>A web app with a database</h3>
+            <p>Flask front end, user accounts, an admin role and SQL Server behind it. Receipts are uploaded as PDFs and parsed into line items.</p>
+          </div>
+        </li>
+        <li>
+          <span class="stage-date">Jul 2025</span>
+          <svg class="stage-art" viewBox="0 0 120 64" aria-hidden="true">
+            <rect class="shape" x="44" y="3" width="32" height="13" rx="3"/>
+            <path d="M60 16v8M18 24h84M18 24v6M39 24v6M60 24v6M81 24v6M102 24v6"/>
+            <rect class="shape" x="9" y="30" width="18" height="13" rx="3"/>
+            <rect class="shape" x="30" y="30" width="18" height="13" rx="3"/>
+            <rect class="shape" x="51" y="30" width="18" height="13" rx="3"/>
+            <rect class="shape" x="72" y="30" width="18" height="13" rx="3"/>
+            <rect class="shape" x="93" y="30" width="18" height="13" rx="3"/>
+            <path d="M18 43v6M39 43v6M60 43v6M81 43v6M102 43v6M18 49h84M60 49v4"/>
+            <ellipse class="shape" cx="60" cy="57" rx="14" ry="4.5"/>
+          </svg>
+          <div>
+            <h3>Six services on Azure</h3>
+            <p>Sirantha RechnungSplit, my Master's software engineering project. Auth, invoice, split, debt and admin services plus a UI, each in its own container on Azure Container Apps, with JWT auth and EasyOCR.
+              <a href="https://github.com/MonishaShree7391/SoftwareEngineeringProject" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </li>
+        <li>
+          <span class="stage-date">2026</span>
+          <svg class="stage-art" viewBox="0 0 120 64" aria-hidden="true">
+            <path class="shape" d="M8 20h12l4 5h14v24H8z"/>
+            <path d="M44 36h12M51 31l5 5-5 5"/>
+            <rect class="shape" x="62" y="22" width="22" height="28" rx="3"/>
+            <path d="M67 31h12M67 37h12M67 43h7"/>
+            <path d="M90 36h6M92 31l5 5-5 5"/>
+            <path d="M102 50V38M108 50V28M114 50V33"/>
+            <path d="M73 16a26 26 0 0 0-46 2M27 12v6h6"/>
+          </svg>
+          <div>
+            <h3>Still running, now automated</h3>
+            <p>A folder watcher imports new PDF receipts on its own, removes duplicates and flags the ones that need review. Photos of receipts go to an OpenAI vision model that returns the line items as structured JSON. An analytics dashboard sits on top, and I'm adding a retrieval layer to ask the data questions.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="experience">
+      <h2 class="section-title"><span>03</span>Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-meta">
+            <span class="job-date">08/2024 – Present</span>
+            <span class="job-place">Berlin, Germany</span>
+          </div>
+          <div class="job-body">
+            <h3>AI Engineer <span class="at">Consorzio Toscano D'Avitani</span></h3>
+            <ul>
+              <li>Built a German-language AI assistant in Microsoft Teams that translates warehouse staff questions into SQL against SQL Server.</li>
+              <li>Designed LLM-based intent classification and a retrieval-augmented text-to-SQL pipeline on locally hosted, quantized models.</li>
+              <li>Built a gold evaluation set from real user queries and fine-tuned Qwen2.5-14B with LoRA on a single GPU.</li>
+              <li>Integrated with Teams via Graph API, Flask, Celery and Redis; containerized with Docker and hardened with TLS, license key management and code signing.</li>
+            </ul>
+            <ul class="tags">
+              <li>Ollama</li><li>Qwen2.5</li><li>SQLCoder</li><li>ChromaDB</li><li>LoRA</li><li>Flask</li><li>Celery</li><li>Redis</li><li>Graph API</li><li>Docker</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job-meta">
+            <span class="job-date">07/2019 – 11/2022</span>
+            <span class="job-place">Chennai, India</span>
+          </div>
+          <div class="job-body">
+            <h3>Java Developer, Citi Bank project <span class="at">Tata Consultancy Services</span></h3>
+            <ul>
+              <li>Developed J2EE applications and backend services for enterprise clients in an agile team.</li>
+              <li>Upgraded core frameworks (Spring, Struts, POI), contributing to a 20% improvement in system performance and better stability at peak load.</li>
+              <li>Wrote PL/SQL scripts and scheduled jobs with Autosys for the NAM, EMEA and APAC regions.</li>
+              <li>Handled production deployments with TeamCity and UDeploy under strict version control standards.</li>
+            </ul>
+            <ul class="tags">
+              <li>Java</li><li>Spring</li><li>Struts</li><li>PL/SQL</li><li>Autosys</li><li>TeamCity</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job-meta">
+            <span class="job-date">07/2025</span>
+            <span class="job-place">Berlin, Germany</span>
+          </div>
+          <div class="job-body">
+            <h3>Master's in Computer Science <span class="at">IU International University of Applied Sciences</span></h3>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="projects">
+      <h2 class="section-title"><span>04</span>More projects</h2>
+
+      <div class="project-grid">
+        <article class="project">
+          <p class="project-kind">GenAI · Full stack</p>
+          <h3>Talk With DB</h3>
+          <p>
+            Ask a SQL Server database questions in natural language. A FastAPI backend turns prompts into
+            SQL through the OpenAI API and runs them with SQLAlchemy; a React, Vite and Tailwind front end shows the results.
+          </p>
+          <ul class="tags"><li>FastAPI</li><li>React</li><li>SQLAlchemy</li><li>OpenAI API</li></ul>
+          <p class="project-links">
+            <a href="https://github.com/BigDataEngineer09/genAi_TalkWithDb" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <p class="project-kind">Master's project · Data engineering</p>
+          <h3>Yelp ETL: medallion pipeline</h3>
+          <p>
+            A batch ETL pipeline over the Yelp dataset with bronze, silver and gold layers. Runs locally in
+            Docker with PySpark, with stages that mirror Azure Data Factory, Databricks and Synapse.
+          </p>
+          <ul class="tags"><li>PySpark</li><li>Docker</li><li>Pandas</li><li>ETL</li></ul>
+          <p class="project-links">
+            <a href="https://github.com/MonishaShree7391/DataEngineeringProject" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <p class="project-kind">NLP · Named entity recognition</p>
+          <h3>Resume Extractor</h3>
+          <p>
+            An NER pipeline that pulls names, education, experience and skills out of free-text resumes
+            to speed up screening. Covers annotation, cleaning, EDA, model training and evaluation.
+          </p>
+          <ul class="tags"><li>NER</li><li>NLP</li><li>Python</li><li>Jupyter</li></ul>
+          <p class="project-links">
+            <a href="https://github.com/BigDataEngineer09/NLP_Resume_Extractor" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <p class="project-kind">Machine learning · Classification</p>
+          <h3>Email Spam Classifier</h3>
+          <p>
+            Compared Naive Bayes, Decision Tree, SVM and Random Forest on email text. SVM came out ahead
+            with 0.963 recall and 0.981 AUC.
+          </p>
+          <ul class="tags"><li>scikit-learn</li><li>NLTK</li><li>Pandas</li></ul>
+          <p class="project-links">
+            <a href="https://github.com/BigDataEngineer09/email-spam-classifier-cvip" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+            <a href="https://www.kaggle.com/code/monishashrees/email-spam-filter-99-03" target="_blank" rel="noopener">Kaggle <span aria-hidden="true">↗</span></a>
+          </p>
+        </article>
+      </div>
+
+      <h3 class="more-title">Where I started</h3>
+      <ul class="more-list">
+        <li>
+          <a href="https://github.com/BigDataEngineer09/Project_on_YelpDataset_Azure_Databricks" target="_blank" rel="noopener">Yelp analysis on Azure Databricks</a>
+          <span>Spark on ADLS: JSON to Parquet, partitioning, broadcast joins. Guided project.</span>
+        </li>
+        <li>
+          <a href="https://github.com/BigDataEngineer09/ETL_Azure_P1" target="_blank" rel="noopener">End-to-end Azure ETL</a>
+          <span>Data Factory, Data Lake, Databricks, Synapse and Power BI. Guided project.</span>
+        </li>
+        <li>
+          <a href="https://github.com/BigDataEngineer09/EDA_Coderscave_CustomerBehaviorAnalysis_Nielson" target="_blank" rel="noopener">Customer behaviour analysis</a>
+          <span>Exploratory analysis of Nielsen store transaction data.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section container" id="skills">
+      <h2 class="section-title"><span>05</span>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Machine Learning &amp; AI</h3>
+          <ul class="tags"><li>LLMs</li><li>RAG</li><li>PyTorch</li><li>Hugging Face Transformers</li><li>LangChain</li><li>OpenAI API</li><li>Vector embeddings</li><li>Semantic search</li><li>LoRA fine-tuning</li><li>Quantization</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="tags"><li>Python</li><li>Java</li><li>SQL</li></ul>
+          <ul class="lang-list">
+            <li><strong>English</strong> C1</li>
+            <li><strong>German</strong> B1</li>
+            <li><strong>Tamil</strong> native</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend &amp; Messaging</h3>
+          <ul class="tags"><li>FastAPI</li><li>Flask</li><li>REST APIs</li><li>Celery</li><li>Redis</li><li>Async processing</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data</h3>
+          <ul class="tags"><li>SQL Server</li><li>ChromaDB</li><li>Data pipelines</li><li>Query optimization</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>MLOps &amp; Production</h3>
+          <ul class="tags"><li>Docker</li><li>GitHub Actions</li><li>Bitbucket</li><li>TLS/HTTPS</li><li>Monitoring</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; Integration</h3>
+          <ul class="tags"><li>Microsoft Azure</li><li>AWS (exposure)</li><li>Microsoft Graph API</li><li>OAuth2</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact">
+      <h2 class="section-title"><span>06</span>Contact</h2>
+      <p class="contact-lede">Looking for an AI engineer who has shipped LLM systems on real infrastructure? Let's talk.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:monishashree.career@gmail.com">monishashree.career@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/monisha-shree-senthilnathan" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/BigDataEngineer09" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://github.com/MonishaShree7391" target="_blank" rel="noopener">GitHub (university)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Monisha Shree Senthil Nathan · Berlin</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>
